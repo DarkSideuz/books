@@ -12,9 +12,10 @@ def create_books_table(connection):
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS books (
         id SERIAL PRIMARY KEY,
-        title VARCHAR(255) NOT NULL,
-        author VARCHAR(255) NOT NULL,
-        publication_year INTEGER NOT NULL
+        name VARCHAR(255) NOT NULL,
+        description VARCHAR(255) NOT NULL,
+        pages INT NOT NULL
+        ptice INT NOT NULL
     );
     """)
     connection.commit()
