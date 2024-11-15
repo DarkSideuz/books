@@ -15,7 +15,7 @@ def create_books_table(connection):
         name VARCHAR(255) NOT NULL,
         description VARCHAR(255) NOT NULL,
         pages INT NOT NULL
-        ptice INT NOT NULL
+        price INT NOT NULL
     );
     """)
     connection.commit()
